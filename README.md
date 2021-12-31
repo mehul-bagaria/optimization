@@ -18,6 +18,6 @@ _Both types of optimization methods have been shown with solved examples in pyth
 | 1_Using-fsolve              | The optimization is done using `fsolve` function of  `scipy ` library, here the derivative of the function is fed to find the stationary points, and on those points function value is evaluated. |        |
 | 2_Using_Minimize            | The optimization is done using `minimze` function of  `scipy ` library, that is dedicated for the optimization problems. Here single and multi-variable function is fed directly with or without  derivative (Jacobian) and double derivate (double derivative). |        |
 | 3_Using_MMA_solver          | Here predefined MMA solver (`MMA.py`) is used for finding the optimal value. Function along derivative and bounds is fed. |        |
-| 4_Using_lagrange_multiplier | The constrained optimization problem is divided into unconstrained optimization problem through Lagrange multipliers, and is solved using different approaches. |        |
+| 4_Using_lagrange_multiplier | The constrained optimization problem is divided into unconstrained optimization problem through Lagrange multipliers, and is solved using different approaches. The generated unconstrainted optimization Lagrange function is optimized using `minimize` function without feeding the derivative. And is also solved using `fsolve ` and `grad` function to first find the derivative and then find optimization. |        |
 |                             |                                                              |        |
 
